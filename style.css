@@ -245,6 +245,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 8fr;
   padding-left: 30px;
+  column-gap: 10px;
 }
 
 .large-profile-img {
