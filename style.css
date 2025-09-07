@@ -394,3 +394,8 @@ button {
   align-self: flex-end;
   padding-bottom: 5px;
 }
+
+.announcement-title,
+.trending-title {
+  margin-left: 20px;
+}
