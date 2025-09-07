@@ -3,6 +3,7 @@
 /* * {
   outline: 1px solid red;
 } */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 html {
   box-sizing: border-box;
@@ -28,6 +29,7 @@ ul {
   margin: 0;
   padding: 0;
   font-weight: normal;
+  font-family: Roboto;
 }
 
 ol,
@@ -41,8 +43,8 @@ img {
 }
 
 .container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 3fr 11fr;
   grid-template-rows: 1fr 4fr;
@@ -147,13 +149,13 @@ img {
   padding-top: 15px;
   padding-left: 15px;
   position: relative;
-  border-left: solid 6px rgb(188, 185, 7);
+  border-left: solid 6px #f0b429;
 }
 
 .card-buttons {
   position: absolute;
   right: 15px;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 /* Announcements */
@@ -178,7 +180,7 @@ img {
 }
 
 .announcement {
-  border-bottom: solid gray;
+  border-bottom: solid 1px gray;
 }
 
 .announcement:last-of-type {
@@ -189,7 +191,7 @@ img {
 
 .trending-container {
   background-color: white;
-  padding: 10px 20px;
+  padding: 10px 0px 10px 0px;
   margin: 20px;
   height: 80%;
   display: grid;
@@ -212,7 +214,7 @@ img {
 }
 
 .search-bar {
-  background-color: rgb(157, 161, 159);
+  background-color: #e2e8f0;
   align-self: center;
   height: 1.5em;
   margin-right: 20px;
@@ -225,7 +227,7 @@ img {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-items: center;
-  gap: 10px;
+  gap: 5px;
   padding: 15px 35px;
 }
 
@@ -241,13 +243,11 @@ img {
 
 .greeting {
   display: grid;
-  grid-template-columns: 2fr 8fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-columns: 1fr 8fr;
   padding-left: 30px;
 }
 
 .large-profile-img {
-  grid-row: 1 / 3;
   align-content: center;
 }
 
@@ -297,4 +297,93 @@ img {
 
 h1 {
   margin-left: 15px;
+}
+
+.icon {
+  filter: invert(100%);
+}
+
+.main-logo-text {
+  font-size: 2em;
+  font-weight: 600;
+}
+
+.sidebar-text {
+  font-size: 1.25em;
+  font-weight: 600;
+}
+
+.card-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+h1 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.profile-username {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+.greeting-text {
+  font-size: 1em;
+  font-weight: 300;
+}
+
+.large-username {
+  font-size: 1.5em;
+  font-weight: 600;
+}
+
+.header {
+  min-height: fit-content;
+}
+
+.main {
+  padding-top: 30px;
+}
+
+.large-profile-img {
+  justify-content: start;
+}
+
+.texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  font-size: 1em;
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+.announcement > p {
+  font-size: 0.9em;
+  color: gray;
+}
+
+.announcement {
+  padding: 15px;
+}
+
+.project-title {
+  font-size: 1.25em;
+  font-weight: 600;
+  margin-bottom: 0.3em;
+}
+
+.project-description {
+  color: gray;
+  font-size: 1em;
+}
+
+button {
+  font-size: large;
+  font-weight: 600;
 }
