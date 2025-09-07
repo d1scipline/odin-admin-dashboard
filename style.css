@@ -48,7 +48,6 @@ img {
   display: grid;
   grid-template-columns: 3fr 11fr;
   grid-template-rows: 15% 85%;
-  row-gap: 10px;
 }
 
 .sidebar {
